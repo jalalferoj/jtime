@@ -56,8 +56,6 @@ pi@pi:~/jtime $ nano ~/.bashrc
 inside ~/.bashrc go all the way to the bottom and paste the code below and save it, time will open in terminal whenever you open your terminal and press q to exit clock:
 jtime -s -c -C 2
 then run in the terminal: jtime
-<img width="801" height="555" alt="output" src="https://github.com/user-attachments/assets/15544a92-fd86-4a85-81c2-8621609672a3" />
-
 
 
 
