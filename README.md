@@ -42,6 +42,25 @@ To change the city from Melbourne to your local area, edit the get_weather funct
 fp = popen("curl -s 'wttr.in/YOUR_CITY?format=%t+Feels:%f+Wind:%w' ...", "r");
 After editing, run make and sudo make install again.
 
+Example - This is what I have done below:
+pi@pi:~ $ git clone https://github.com/jalalferoj/jtime.git
+Cloning into 'jtime'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 12 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (12/12), 10.88 KiB | 506.00 KiB/s, done.
+pi@pi:~ $ cd jtime
+pi@pi:~/jtime $ make
+gcc jtime.c -o jtime -lncurses
+pi@pi:~/jtime $ sudo make install
+install -m 755 jtime /usr/local/bin/jtime
+pi@pi:~/jtime $ nano ~/.bashrc
+inside ~/.bashrc go all the way to the bottom and paste the code below and save it, time will open in terminal whenever you open your terminal and press q to exit clock:
+jtime -s -c -C 2
+
+
+
 
 
 
