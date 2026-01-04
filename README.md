@@ -31,9 +31,6 @@ Usage:
 Once installed, you can run the clock from any directory:
 Command  Result
 jtime    Starts the clock with the default Green color.
-jtime red    Starts the clock in Red.
-jtime blue   Starts the clock in Blue.
-jtime yellow   Starts the clock in Yellow.
 Controls: * Press 'q' to quit the application safely and restore your terminal.
 
 Customization:
@@ -58,6 +55,10 @@ install -m 755 jtime /usr/local/bin/jtime
 pi@pi:~/jtime $ nano ~/.bashrc
 inside ~/.bashrc go all the way to the bottom and paste the code below and save it, time will open in terminal whenever you open your terminal and press q to exit clock:
 jtime -s -c -C 2
+then run in the terminal: jtime
+<img width="801" height="555" alt="output" src="https://github.com/user-attachments/assets/15544a92-fd86-4a85-81c2-8621609672a3" />
+
+
 
 
 
