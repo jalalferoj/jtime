@@ -11,20 +11,17 @@ A lightweight, terminal-based (TUI) digital clock designed for the computer term
 
 ---
 
-## Installation
+## Information
+A beautiful terminal clock with Melbourne weather for Linux.
 
-1. Prerequisites:
+## Installation
 You will need the `ncurses` library and `curl` installed on your Raspberry Pi:
 ```bash
 sudo apt update
 sudo apt install libncurses5-dev libncursesw5-dev curl
-
-2. Clone and Build:
 git clone https://github.com/jalalferoj/jtime.git
 cd jtime
 make
-
-3. Install System-Wide:
 sudo make install
 
 Usage:
@@ -40,6 +37,8 @@ fp = popen("curl -s 'wttr.in/YOUR_CITY?format=%t+Feels:%f+Wind:%w' ...", "r");
 After editing, run make and sudo make install again.
 
 Example - This is what I have done below:
+pi@pi:~ $ sudo apt update
+pi@pi:~/jtime $ sudo apt install libncurses5-dev libncursesw5-dev curl
 pi@pi:~ $ git clone https://github.com/jalalferoj/jtime.git
 Cloning into 'jtime'...
 remote: Enumerating objects: 12, done.
