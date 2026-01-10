@@ -1,10 +1,3 @@
-# 🕒 jtime
-
-A lightweight, terminal-based (TUI) digital clock designed for the computer terminal. It features a custom "Big Font" display, current date, and real-time weather data for Melbourne, Australia.
-
-## Information
-A beautiful terminal clock with Melbourne weather for Linux.
-
 ## Installation:
 sudo apt update
 sudo apt install libncurses5-dev libncursesw5-dev curl
@@ -16,6 +9,13 @@ jtime
 
 nano ~/.bashrc
 jtime -s -c -C 2
+
+# 🕒 jtime
+
+A lightweight, terminal-based (TUI) digital clock designed for the computer terminal. It features a custom "Big Font" display, current date, and real-time weather data for Melbourne, Australia.
+
+## Information
+A beautiful terminal clock with Melbourne weather for Linux.
 
 ## ✨ Features
 * **Big Character Rendering:** Custom ASCII-mapped font for high visibility.
