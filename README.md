@@ -1,14 +1,22 @@
 ## Installation:
 sudo apt update
+
 sudo apt install libncurses5-dev libncursesw5-dev curl
+
 git clone https://github.com/jalalferoj/jtime.git
+
 cd jtime
+
 make
+
 sudo make install
+
 jtime
+
 
 nano ~/.bashrc
 jtime -s -c -C 2
+
 
 # 🕒 jtime
 
