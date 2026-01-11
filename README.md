@@ -1,4 +1,5 @@
 ## Installation:
+
 sudo apt update
 
 sudo apt install libncurses5-dev libncursesw5-dev curl
@@ -48,19 +49,29 @@ To change the city from Melbourne to your local area, edit the get_weather funct
 fp = popen("curl -s 'wttr.in/YOUR_CITY?format=%t+Feels:%f+Wind:%w' ...", "r");
 After editing, run make and sudo make install again.
 
-Example - This is what I have done below:
+Example - in your terminal:
+
 pi@pi:~ $ sudo apt update
+
 pi@pi:~/jtime $ sudo apt install libncurses5-dev libncursesw5-dev curl
+
 pi@pi:~ $ git clone https://github.com/jalalferoj/jtime.git
+
 pi@pi:~ $ cd jtime
+
 pi@pi:~/jtime $ make
+
 pi@pi:~/jtime $ sudo make install
+
 pi@pi:~/jtime $ nano ~/.bashrc
 
 Inside ~/.bashrc 
+
 Go all the way to the bottom and paste the code: jtime -s -c -C 2     
+
 Save it.
-Time will open in the terminal whenever you open your terminal and press q to exit the clock:
+
+Time will open in the terminal whenever you open your terminal and press q to exit the clock.
 
 
 
